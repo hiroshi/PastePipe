@@ -13,7 +13,7 @@ struct ClipPipeApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {
-        WindowGroup {
+        Settings {
 //            ContentView()
             EmptyView()
         }
