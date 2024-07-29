@@ -55,11 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				682FA2A02C564E9D00BB7496 /* ClipPipeApp.swift */,
+				68A878012C57A25600E55B4E /* AppDelegate.swift */,
 				682FA2A22C564E9D00BB7496 /* ContentView.swift */,
 				682FA2A42C564E9F00BB7496 /* Assets.xcassets */,
 				682FA2A92C564E9F00BB7496 /* ClipPipe.entitlements */,
 				682FA2A62C564E9F00BB7496 /* Preview Content */,
-				68A878012C57A25600E55B4E /* AppDelegate.swift */,
 			);
 			path = ClipPipe;
 			sourceTree = "<group>";
@@ -275,10 +275,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ClipPipe/ClipPipe.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ClipPipe/Preview Content\"";
+				DEVELOPMENT_TEAM = J3AQWQSJCR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -300,10 +302,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ClipPipe/ClipPipe.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ClipPipe/Preview Content\"";
+				DEVELOPMENT_TEAM = J3AQWQSJCR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
