@@ -11,6 +11,7 @@
 		682FA2A32C564E9D00BB7496 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682FA2A22C564E9D00BB7496 /* ContentView.swift */; };
 		682FA2A52C564E9F00BB7496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682FA2A42C564E9F00BB7496 /* Assets.xcassets */; };
 		682FA2A82C564E9F00BB7496 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682FA2A72C564E9F00BB7496 /* Preview Assets.xcassets */; };
+		68A878022C57A25600E55B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A878012C57A25600E55B4E /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		682FA2A42C564E9F00BB7496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		682FA2A72C564E9F00BB7496 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		682FA2A92C564E9F00BB7496 /* ClipPipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClipPipe.entitlements; sourceTree = "<group>"; };
+		68A878012C57A25600E55B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				682FA2A42C564E9F00BB7496 /* Assets.xcassets */,
 				682FA2A92C564E9F00BB7496 /* ClipPipe.entitlements */,
 				682FA2A62C564E9F00BB7496 /* Preview Content */,
+				68A878012C57A25600E55B4E /* AppDelegate.swift */,
 			);
 			path = ClipPipe;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A878022C57A25600E55B4E /* AppDelegate.swift in Sources */,
 				682FA2A32C564E9D00BB7496 /* ContentView.swift in Sources */,
 				682FA2A12C564E9D00BB7496 /* ClipPipeApp.swift in Sources */,
 			);

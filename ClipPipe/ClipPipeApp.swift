@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct ClipPipeApp: App {
+    // AppDelegateインスタンスを作成
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            EmptyView()
         }
     }
 }
