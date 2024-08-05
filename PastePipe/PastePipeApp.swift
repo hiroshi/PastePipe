@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct ClipPipeApp: App {
+struct PastePipeApp: App {
 //    @State private var clipboardText: String = ""
     @StateObject private var pasteboardObserver = PasteboardObserver()
 

@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		682FA2A12C564E9D00BB7496 /* ClipPipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682FA2A02C564E9D00BB7496 /* ClipPipeApp.swift */; };
+		682FA2A12C564E9D00BB7496 /* PastePipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682FA2A02C564E9D00BB7496 /* PastePipeApp.swift */; };
 		682FA2A52C564E9F00BB7496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682FA2A42C564E9F00BB7496 /* Assets.xcassets */; };
 		682FA2A82C564E9F00BB7496 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682FA2A72C564E9F00BB7496 /* Preview Assets.xcassets */; };
 		68A878042C60F31100E55B4E /* PasteboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A878032C60F31100E55B4E /* PasteboardObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		682FA29D2C564E9D00BB7496 /* ClipPipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipPipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		682FA2A02C564E9D00BB7496 /* ClipPipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipPipeApp.swift; sourceTree = "<group>"; };
+		682FA29D2C564E9D00BB7496 /* PastePipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PastePipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		682FA2A02C564E9D00BB7496 /* PastePipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePipeApp.swift; sourceTree = "<group>"; };
 		682FA2A42C564E9F00BB7496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		682FA2A72C564E9F00BB7496 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		682FA2A92C564E9F00BB7496 /* ClipPipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClipPipe.entitlements; sourceTree = "<group>"; };
+		682FA2A92C564E9F00BB7496 /* PastePipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PastePipe.entitlements; sourceTree = "<group>"; };
 		68A878032C60F31100E55B4E /* PasteboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,7 +36,7 @@
 		682FA2942C564E9D00BB7496 = {
 			isa = PBXGroup;
 			children = (
-				682FA29F2C564E9D00BB7496 /* ClipPipe */,
+				682FA29F2C564E9D00BB7496 /* PastePipe */,
 				682FA29E2C564E9D00BB7496 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,21 +44,21 @@
 		682FA29E2C564E9D00BB7496 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				682FA29D2C564E9D00BB7496 /* ClipPipe.app */,
+				682FA29D2C564E9D00BB7496 /* PastePipe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		682FA29F2C564E9D00BB7496 /* ClipPipe */ = {
+		682FA29F2C564E9D00BB7496 /* PastePipe */ = {
 			isa = PBXGroup;
 			children = (
-				682FA2A02C564E9D00BB7496 /* ClipPipeApp.swift */,
+				682FA2A02C564E9D00BB7496 /* PastePipeApp.swift */,
 				68A878032C60F31100E55B4E /* PasteboardObserver.swift */,
 				682FA2A42C564E9F00BB7496 /* Assets.xcassets */,
-				682FA2A92C564E9F00BB7496 /* ClipPipe.entitlements */,
+				682FA2A92C564E9F00BB7496 /* PastePipe.entitlements */,
 				682FA2A62C564E9F00BB7496 /* Preview Content */,
 			);
-			path = ClipPipe;
+			path = PastePipe;
 			sourceTree = "<group>";
 		};
 		682FA2A62C564E9F00BB7496 /* Preview Content */ = {
@@ -72,9 +72,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		682FA29C2C564E9D00BB7496 /* ClipPipe */ = {
+		682FA29C2C564E9D00BB7496 /* PastePipe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 682FA2AC2C564E9F00BB7496 /* Build configuration list for PBXNativeTarget "ClipPipe" */;
+			buildConfigurationList = 682FA2AC2C564E9F00BB7496 /* Build configuration list for PBXNativeTarget "PastePipe" */;
 			buildPhases = (
 				682FA2992C564E9D00BB7496 /* Sources */,
 				682FA29A2C564E9D00BB7496 /* Frameworks */,
@@ -84,9 +84,9 @@
 			);
 			dependencies = (
 			);
-			name = ClipPipe;
+			name = PastePipe;
 			productName = ClipPipe;
-			productReference = 682FA29D2C564E9D00BB7496 /* ClipPipe.app */;
+			productReference = 682FA29D2C564E9D00BB7496 /* PastePipe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 682FA2982C564E9D00BB7496 /* Build configuration list for PBXProject "ClipPipe" */;
+			buildConfigurationList = 682FA2982C564E9D00BB7496 /* Build configuration list for PBXProject "PastePipe" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				682FA29C2C564E9D00BB7496 /* ClipPipe */,
+				682FA29C2C564E9D00BB7496 /* PastePipe */,
 			);
 		};
 /* End PBXProject section */
@@ -140,7 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68A878042C60F31100E55B4E /* PasteboardObserver.swift in Sources */,
-				682FA2A12C564E9D00BB7496 /* ClipPipeApp.swift in Sources */,
+				682FA2A12C564E9D00BB7496 /* PastePipeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,12 +270,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ClipPipe/ClipPipe.entitlements;
+				CODE_SIGN_ENTITLEMENTS = PastePipe/PastePipe.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ClipPipe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PastePipe/Preview Content\"";
 				DEVELOPMENT_TEAM = J3AQWQSJCR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -286,7 +286,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yakitara.ClipPipe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yakitara.PastePipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -298,12 +298,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ClipPipe/ClipPipe.entitlements;
+				CODE_SIGN_ENTITLEMENTS = PastePipe/PastePipe.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ClipPipe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PastePipe/Preview Content\"";
 				DEVELOPMENT_TEAM = J3AQWQSJCR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -314,7 +314,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yakitara.ClipPipe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yakitara.PastePipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -324,7 +324,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		682FA2982C564E9D00BB7496 /* Build configuration list for PBXProject "ClipPipe" */ = {
+		682FA2982C564E9D00BB7496 /* Build configuration list for PBXProject "PastePipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				682FA2AA2C564E9F00BB7496 /* Debug */,
@@ -333,7 +333,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		682FA2AC2C564E9F00BB7496 /* Build configuration list for PBXNativeTarget "ClipPipe" */ = {
+		682FA2AC2C564E9F00BB7496 /* Build configuration list for PBXNativeTarget "PastePipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				682FA2AD2C564E9F00BB7496 /* Debug */,
