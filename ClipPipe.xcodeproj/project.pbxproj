@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		682FA2A12C564E9D00BB7496 /* ClipPipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682FA2A02C564E9D00BB7496 /* ClipPipeApp.swift */; };
-		682FA2A32C564E9D00BB7496 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682FA2A22C564E9D00BB7496 /* ContentView.swift */; };
 		682FA2A52C564E9F00BB7496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682FA2A42C564E9F00BB7496 /* Assets.xcassets */; };
 		682FA2A82C564E9F00BB7496 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682FA2A72C564E9F00BB7496 /* Preview Assets.xcassets */; };
-		68A878022C57A25600E55B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A878012C57A25600E55B4E /* AppDelegate.swift */; };
+		68A878042C60F31100E55B4E /* PasteboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A878032C60F31100E55B4E /* PasteboardObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		682FA29D2C564E9D00BB7496 /* ClipPipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipPipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		682FA2A02C564E9D00BB7496 /* ClipPipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipPipeApp.swift; sourceTree = "<group>"; };
-		682FA2A22C564E9D00BB7496 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		682FA2A42C564E9F00BB7496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		682FA2A72C564E9F00BB7496 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		682FA2A92C564E9F00BB7496 /* ClipPipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClipPipe.entitlements; sourceTree = "<group>"; };
-		68A878012C57A25600E55B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68A878032C60F31100E55B4E /* PasteboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				682FA2A02C564E9D00BB7496 /* ClipPipeApp.swift */,
-				68A878012C57A25600E55B4E /* AppDelegate.swift */,
-				682FA2A22C564E9D00BB7496 /* ContentView.swift */,
+				68A878032C60F31100E55B4E /* PasteboardObserver.swift */,
 				682FA2A42C564E9F00BB7496 /* Assets.xcassets */,
 				682FA2A92C564E9F00BB7496 /* ClipPipe.entitlements */,
 				682FA2A62C564E9F00BB7496 /* Preview Content */,
@@ -142,8 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68A878022C57A25600E55B4E /* AppDelegate.swift in Sources */,
-				682FA2A32C564E9D00BB7496 /* ContentView.swift in Sources */,
+				68A878042C60F31100E55B4E /* PasteboardObserver.swift in Sources */,
 				682FA2A12C564E9D00BB7496 /* ClipPipeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +279,7 @@
 				DEVELOPMENT_TEAM = J3AQWQSJCR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,6 +307,7 @@
 				DEVELOPMENT_TEAM = J3AQWQSJCR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
