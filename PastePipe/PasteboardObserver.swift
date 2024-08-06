@@ -2,6 +2,7 @@ import AppKit
 
 class PasteboardObserver: ObservableObject {
     @Published var clipboardText: String = ""
+    @Published var types: [NSPasteboard.PasteboardType] = []
     private var lastChangeCount: Int = 0
     private var timer: Timer?
 
@@ -10,6 +11,11 @@ class PasteboardObserver: ObservableObject {
             let pasteboard = NSPasteboard.general
             if pasteboard.changeCount != self.lastChangeCount {
                 self.lastChangeCount = pasteboard.changeCount
+                self.types = pasteboard.types ?? []
+                print("Pastebaord changed")
+                for type in self.types {
+                    print("type: \(type.rawValue)")
+                }
                 if let newText = pasteboard.string(forType: .string) {
                     DispatchQueue.main.async {
                          self.clipboardText = newText

@@ -22,8 +22,14 @@ struct PastePipeApp: App {
                 }
             }
         }
-        MenuBarExtra("menu", systemImage: "star") {
+        MenuBarExtra("menu", systemImage: "doc.on.clipboard") {
             Text(pasteboardObserver.clipboardText)
+            Divider()
+            ForEach(pasteboardObserver.types, id:\.self) {type in
+                Button(type.rawValue) {
+
+                }
+            }
         }
     }
 }
