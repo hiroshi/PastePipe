@@ -12,10 +12,10 @@ class PasteboardObserver: ObservableObject {
             if pasteboard.changeCount != self.lastChangeCount {
                 self.lastChangeCount = pasteboard.changeCount
                 self.types = pasteboard.types ?? []
-                print("Pastebaord changed")
-                for type in self.types {
-                    print("type: \(type.rawValue)")
-                }
+//                print("Pastebaord changed")
+//                for type in self.types {
+//                    print("type: \(type.rawValue)")
+//                }
                 if let newText = pasteboard.string(forType: .string) {
                     DispatchQueue.main.async {
                          self.clipboardText = newText

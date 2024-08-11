@@ -11,6 +11,14 @@
 		682FA2A52C564E9F00BB7496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682FA2A42C564E9F00BB7496 /* Assets.xcassets */; };
 		682FA2A82C564E9F00BB7496 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682FA2A72C564E9F00BB7496 /* Preview Assets.xcassets */; };
 		68A878042C60F31100E55B4E /* PasteboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A878032C60F31100E55B4E /* PasteboardObserver.swift */; };
+		68FE74D22C64D3D7008C9BE6 /* hello.wasm in Resources */ = {isa = PBXBuildFile; fileRef = 68FE74D12C64D3D7008C9BE6 /* hello.wasm */; };
+		68FE74DA2C64DAEC008C9BE6 /* WASI in Frameworks */ = {isa = PBXBuildFile; productRef = 68FE74D92C64DAEC008C9BE6 /* WASI */; };
+		68FE74DC2C64DAEC008C9BE6 /* WAT in Frameworks */ = {isa = PBXBuildFile; productRef = 68FE74DB2C64DAEC008C9BE6 /* WAT */; };
+		68FE74DE2C64DAEC008C9BE6 /* WIT in Frameworks */ = {isa = PBXBuildFile; productRef = 68FE74DD2C64DAEC008C9BE6 /* WIT */; };
+		68FE74E02C64DAEC008C9BE6 /* WasmKit in Frameworks */ = {isa = PBXBuildFile; productRef = 68FE74DF2C64DAEC008C9BE6 /* WasmKit */; };
+		68FE74E22C64DAEC008C9BE6 /* WasmKitWASI in Frameworks */ = {isa = PBXBuildFile; productRef = 68FE74E12C64DAEC008C9BE6 /* WasmKitWASI */; };
+		68FE74E42C64DAEC008C9BE6 /* WasmParser in Frameworks */ = {isa = PBXBuildFile; productRef = 68FE74E32C64DAEC008C9BE6 /* WasmParser */; };
+		68FE74E62C64DAEC008C9BE6 /* _CabiShims in Frameworks */ = {isa = PBXBuildFile; productRef = 68FE74E52C64DAEC008C9BE6 /* _CabiShims */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,7 @@
 		682FA2A72C564E9F00BB7496 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		682FA2A92C564E9F00BB7496 /* PastePipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PastePipe.entitlements; sourceTree = "<group>"; };
 		68A878032C60F31100E55B4E /* PasteboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardObserver.swift; sourceTree = "<group>"; };
+		68FE74D12C64D3D7008C9BE6 /* hello.wasm */ = {isa = PBXFileReference; lastKnownFileType = file; path = hello.wasm; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +36,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68FE74E22C64DAEC008C9BE6 /* WasmKitWASI in Frameworks */,
+				68FE74DE2C64DAEC008C9BE6 /* WIT in Frameworks */,
+				68FE74DA2C64DAEC008C9BE6 /* WASI in Frameworks */,
+				68FE74DC2C64DAEC008C9BE6 /* WAT in Frameworks */,
+				68FE74E02C64DAEC008C9BE6 /* WasmKit in Frameworks */,
+				68FE74E62C64DAEC008C9BE6 /* _CabiShims in Frameworks */,
+				68FE74E42C64DAEC008C9BE6 /* WasmParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +54,7 @@
 			children = (
 				682FA29F2C564E9D00BB7496 /* PastePipe */,
 				682FA29E2C564E9D00BB7496 /* Products */,
+				68FE74D32C64DA93008C9BE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 		682FA29F2C564E9D00BB7496 /* PastePipe */ = {
 			isa = PBXGroup;
 			children = (
+				68FE74D12C64D3D7008C9BE6 /* hello.wasm */,
 				682FA2A02C564E9D00BB7496 /* PastePipeApp.swift */,
 				68A878032C60F31100E55B4E /* PasteboardObserver.swift */,
 				682FA2A42C564E9F00BB7496 /* Assets.xcassets */,
@@ -67,6 +85,13 @@
 				682FA2A72C564E9F00BB7496 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		68FE74D32C64DA93008C9BE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +110,15 @@
 			dependencies = (
 			);
 			name = PastePipe;
+			packageProductDependencies = (
+				68FE74D92C64DAEC008C9BE6 /* WASI */,
+				68FE74DB2C64DAEC008C9BE6 /* WAT */,
+				68FE74DD2C64DAEC008C9BE6 /* WIT */,
+				68FE74DF2C64DAEC008C9BE6 /* WasmKit */,
+				68FE74E12C64DAEC008C9BE6 /* WasmKitWASI */,
+				68FE74E32C64DAEC008C9BE6 /* WasmParser */,
+				68FE74E52C64DAEC008C9BE6 /* _CabiShims */,
+			);
 			productName = ClipPipe;
 			productReference = 682FA29D2C564E9D00BB7496 /* PastePipe.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 682FA2942C564E9D00BB7496;
+			packageReferences = (
+				68FE74D82C64DAEC008C9BE6 /* XCRemoteSwiftPackageReference "WasmKit" */,
+			);
 			productRefGroup = 682FA29E2C564E9D00BB7496 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +166,7 @@
 			files = (
 				682FA2A82C564E9F00BB7496 /* Preview Assets.xcassets in Resources */,
 				682FA2A52C564E9F00BB7496 /* Assets.xcassets in Resources */,
+				68FE74D22C64D3D7008C9BE6 /* hello.wasm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +381,55 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68FE74D82C64DAEC008C9BE6 /* XCRemoteSwiftPackageReference "WasmKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftwasm/WasmKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68FE74D92C64DAEC008C9BE6 /* WASI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68FE74D82C64DAEC008C9BE6 /* XCRemoteSwiftPackageReference "WasmKit" */;
+			productName = WASI;
+		};
+		68FE74DB2C64DAEC008C9BE6 /* WAT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68FE74D82C64DAEC008C9BE6 /* XCRemoteSwiftPackageReference "WasmKit" */;
+			productName = WAT;
+		};
+		68FE74DD2C64DAEC008C9BE6 /* WIT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68FE74D82C64DAEC008C9BE6 /* XCRemoteSwiftPackageReference "WasmKit" */;
+			productName = WIT;
+		};
+		68FE74DF2C64DAEC008C9BE6 /* WasmKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68FE74D82C64DAEC008C9BE6 /* XCRemoteSwiftPackageReference "WasmKit" */;
+			productName = WasmKit;
+		};
+		68FE74E12C64DAEC008C9BE6 /* WasmKitWASI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68FE74D82C64DAEC008C9BE6 /* XCRemoteSwiftPackageReference "WasmKit" */;
+			productName = WasmKitWASI;
+		};
+		68FE74E32C64DAEC008C9BE6 /* WasmParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68FE74D82C64DAEC008C9BE6 /* XCRemoteSwiftPackageReference "WasmKit" */;
+			productName = WasmParser;
+		};
+		68FE74E52C64DAEC008C9BE6 /* _CabiShims */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68FE74D82C64DAEC008C9BE6 /* XCRemoteSwiftPackageReference "WasmKit" */;
+			productName = _CabiShims;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 682FA2952C564E9D00BB7496 /* Project object */;
 }
