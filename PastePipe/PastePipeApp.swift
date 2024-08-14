@@ -1,6 +1,7 @@
 import SwiftUI
 import WasmKit
 import WasmKitWASI
+import JavaScriptCore
 
 @main
 struct PastePipeApp: App {
@@ -9,6 +10,21 @@ struct PastePipeApp: App {
 
     init() {
         print("app init")
+        let context = JSContext()!
+//        let value = context.evaluateScript("1 + 2")
+//        print(value!)
+        let path = Bundle.main.path(forResource: "asc", ofType: "js")!
+        do {
+            let data = try Data(contentsOf: URL(fileURLWithPath: path))
+            var value = context.evaluateScript(String(data: data, encoding: .utf8))
+            print(value!)
+            print(context.exception!)
+            value = context.evaluateScript("await asc.main([])")
+            print(value!)
+            print(context.exception!)
+        } catch {
+            print("Error: \(error)")
+        }
     }
 
     var body: some Scene {
@@ -27,6 +43,12 @@ struct PastePipeApp: App {
         MenuBarExtra("menu", systemImage: "doc.on.clipboard") {
             Text(pasteboardObserver.clipboardText)
             Divider()
+            Button("js core", action: {
+                let context = JSContext()!
+                let value = context.evaluateScript("1 + 2")
+                print(value!)
+//                print(value!.toString()!)
+            })
             ForEach(pasteboardObserver.types, id:\.self) {type in
                 let data = NSPasteboard.general.data(forType: type)!
                 //                Menu(type.rawValue) {

@@ -19,6 +19,7 @@
 		68FE74E22C64DAEC008C9BE6 /* WasmKitWASI in Frameworks */ = {isa = PBXBuildFile; productRef = 68FE74E12C64DAEC008C9BE6 /* WasmKitWASI */; };
 		68FE74E42C64DAEC008C9BE6 /* WasmParser in Frameworks */ = {isa = PBXBuildFile; productRef = 68FE74E32C64DAEC008C9BE6 /* WasmParser */; };
 		68FE74E62C64DAEC008C9BE6 /* _CabiShims in Frameworks */ = {isa = PBXBuildFile; productRef = 68FE74E52C64DAEC008C9BE6 /* _CabiShims */; };
+		68FE74EC2C6A1AAD008C9BE6 /* asc.js in Resources */ = {isa = PBXBuildFile; fileRef = 68FE74EB2C6A1AAD008C9BE6 /* asc.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		682FA2A92C564E9F00BB7496 /* PastePipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PastePipe.entitlements; sourceTree = "<group>"; };
 		68A878032C60F31100E55B4E /* PasteboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardObserver.swift; sourceTree = "<group>"; };
 		68FE74D12C64D3D7008C9BE6 /* hello.wasm */ = {isa = PBXFileReference; lastKnownFileType = file; path = hello.wasm; sourceTree = SOURCE_ROOT; };
+		68FE74EB2C6A1AAD008C9BE6 /* asc.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = asc.js; path = asc/asc.js; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		682FA29F2C564E9D00BB7496 /* PastePipe */ = {
 			isa = PBXGroup;
 			children = (
+				68FE74EB2C6A1AAD008C9BE6 /* asc.js */,
 				68FE74D12C64D3D7008C9BE6 /* hello.wasm */,
 				682FA2A02C564E9D00BB7496 /* PastePipeApp.swift */,
 				68A878032C60F31100E55B4E /* PasteboardObserver.swift */,
@@ -164,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68FE74EC2C6A1AAD008C9BE6 /* asc.js in Resources */,
 				682FA2A82C564E9F00BB7496 /* Preview Assets.xcassets in Resources */,
 				682FA2A52C564E9F00BB7496 /* Assets.xcassets in Resources */,
 				68FE74D22C64D3D7008C9BE6 /* hello.wasm in Resources */,
