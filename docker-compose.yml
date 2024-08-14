@@ -1,0 +1,9 @@
+services:
+  asc:
+    image: node
+    working_dir: /asc
+    volumes:
+      - node_modules:/asc/node_modules
+      - ./asc:/asc
+volumes:
+  node_modules:
