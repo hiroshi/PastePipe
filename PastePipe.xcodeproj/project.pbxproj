@@ -11,7 +11,7 @@
 		682FA2A52C564E9F00BB7496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682FA2A42C564E9F00BB7496 /* Assets.xcassets */; };
 		682FA2A82C564E9F00BB7496 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682FA2A72C564E9F00BB7496 /* Preview Assets.xcassets */; };
 		68A878042C60F31100E55B4E /* PasteboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A878032C60F31100E55B4E /* PasteboardObserver.swift */; };
-		68FE74D22C64D3D7008C9BE6 /* hello.wasm in Resources */ = {isa = PBXBuildFile; fileRef = 68FE74D12C64D3D7008C9BE6 /* hello.wasm */; };
+		68FE74D22C64D3D7008C9BE6 /* debug.wasm in Resources */ = {isa = PBXBuildFile; fileRef = 68FE74D12C64D3D7008C9BE6 /* debug.wasm */; };
 		68FE74DA2C64DAEC008C9BE6 /* WASI in Frameworks */ = {isa = PBXBuildFile; productRef = 68FE74D92C64DAEC008C9BE6 /* WASI */; };
 		68FE74DC2C64DAEC008C9BE6 /* WAT in Frameworks */ = {isa = PBXBuildFile; productRef = 68FE74DB2C64DAEC008C9BE6 /* WAT */; };
 		68FE74DE2C64DAEC008C9BE6 /* WIT in Frameworks */ = {isa = PBXBuildFile; productRef = 68FE74DD2C64DAEC008C9BE6 /* WIT */; };
@@ -28,7 +28,7 @@
 		682FA2A72C564E9F00BB7496 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		682FA2A92C564E9F00BB7496 /* PastePipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PastePipe.entitlements; sourceTree = "<group>"; };
 		68A878032C60F31100E55B4E /* PasteboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardObserver.swift; sourceTree = "<group>"; };
-		68FE74D12C64D3D7008C9BE6 /* hello.wasm */ = {isa = PBXFileReference; lastKnownFileType = file; path = hello.wasm; sourceTree = SOURCE_ROOT; };
+		68FE74D12C64D3D7008C9BE6 /* debug.wasm */ = {isa = PBXFileReference; lastKnownFileType = file; name = debug.wasm; path = asc/build/debug.wasm; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 		682FA29F2C564E9D00BB7496 /* PastePipe */ = {
 			isa = PBXGroup;
 			children = (
-				68FE74D12C64D3D7008C9BE6 /* hello.wasm */,
+				68FE74D12C64D3D7008C9BE6 /* debug.wasm */,
 				682FA2A02C564E9D00BB7496 /* PastePipeApp.swift */,
 				68A878032C60F31100E55B4E /* PasteboardObserver.swift */,
 				682FA2A42C564E9F00BB7496 /* Assets.xcassets */,
@@ -166,7 +166,7 @@
 			files = (
 				682FA2A82C564E9F00BB7496 /* Preview Assets.xcassets in Resources */,
 				682FA2A52C564E9F00BB7496 /* Assets.xcassets in Resources */,
-				68FE74D22C64D3D7008C9BE6 /* hello.wasm in Resources */,
+				68FE74D22C64D3D7008C9BE6 /* debug.wasm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

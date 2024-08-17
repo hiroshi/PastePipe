@@ -11,7 +11,7 @@ struct PastePipeApp: App {
 
     init() {
         print("app init")
-        if let path = Bundle.main.path(forResource: "hello", ofType: "wasm") {
+        if let path = Bundle.main.path(forResource: "debug", ofType: "wasm") {
             print("path: \(path)")
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path))
