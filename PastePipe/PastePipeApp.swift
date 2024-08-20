@@ -23,7 +23,16 @@ struct PastePipeApp: App {
             }
         }
         MenuBarExtra("menu", systemImage: "doc.on.clipboard") {
-            Text(pasteboardObserver.clipboardText)
+            if let sourceURL = pasteboardObserver.sourceURL {
+                Button(action: {
+                    let pb = NSPasteboard.general
+                    let value = pb.string(forType: .string)
+                    pb.clearContents()
+                    pb.setString("from \(sourceURL)\n\(value ?? "")", forType: .string)
+                }, label: {
+                    Text("Prepend SourceURL")
+                })
+            }
             Divider()
             ForEach(pasteboardObserver.types, id:\.self) {type in
                 let data = NSPasteboard.general.data(forType: type)!
@@ -38,11 +47,7 @@ struct PastePipeApp: App {
                     //                        String(data: data, encoding: .utf8)
                     //                    })
                     Button(action: {
-                        if let path = Bundle.main.path(forResource: "hello", ofType: "wasm") {
-                            print("path: \(path)")
-                        } else {
-                            print("hello.wasm not found.")
-                        }
+
                     }) {
                         Text(String(data: data, encoding: .utf8) ?? "")
                     }

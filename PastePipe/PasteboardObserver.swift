@@ -2,6 +2,7 @@ import AppKit
 
 class PasteboardObserver: ObservableObject {
     @Published var clipboardText: String = ""
+    @Published var sourceURL: String? = nil
     @Published var types: [NSPasteboard.PasteboardType] = []
     private var lastChangeCount: Int = 0
     private var timer: Timer?
@@ -23,6 +24,7 @@ class PasteboardObserver: ObservableObject {
                     onChange(newText)
                     print("Clipboard updated: \(newText)")
                 }
+                self.sourceURL = pasteboard.string(forType: NSPasteboard.PasteboardType(rawValue: "org.chromium.source-url"))
             }
         }
     }
