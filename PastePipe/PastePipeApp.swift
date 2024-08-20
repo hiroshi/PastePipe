@@ -26,8 +26,26 @@ struct PastePipeApp: App {
             Text(pasteboardObserver.clipboardText)
             Divider()
             ForEach(pasteboardObserver.types, id:\.self) {type in
-                Button(type.rawValue) {
-
+                let data = NSPasteboard.general.data(forType: type)!
+                //                Menu(type.rawValue) {
+                //                    Text(String(describing: data))
+                //                }
+                Menu("\(type.rawValue) (\(String(describing: data.count)) bytes)") {
+                    //                    print("type: \(type) data: \(String(describing: data))")
+                    //                    Button (action:{
+                    //
+                    //                    }, label: {
+                    //                        String(data: data, encoding: .utf8)
+                    //                    })
+                    Button(action: {
+                        if let path = Bundle.main.path(forResource: "hello", ofType: "wasm") {
+                            print("path: \(path)")
+                        } else {
+                            print("hello.wasm not found.")
+                        }
+                    }) {
+                        Text(String(data: data, encoding: .utf8) ?? "")
+                    }
                 }
             }
         }
