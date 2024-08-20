@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ruby_wasm (2.6.2)
+    ruby_wasm (2.6.2-aarch64-linux)
+
+PLATFORMS
+  aarch64-linux
+  ruby
+
+DEPENDENCIES
+  ruby_wasm (~> 2.6)
+
+BUNDLED WITH
+   2.5.11

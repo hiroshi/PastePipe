@@ -5,5 +5,15 @@ services:
     volumes:
       - node_modules:/asc/node_modules
       - ./asc:/asc
+  ruby.wasm:
+    image: ruby:3.3
+    working_dir: /ruby.wasm
+    environment:
+      BUNDLE_PATH: /bundle
+    volumes:
+      - bundle:/bundle
+      - ./ruby.wasm:/ruby.wasm
 volumes:
   node_modules:
+  bundle:
+    driver: local
